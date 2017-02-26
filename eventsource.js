@@ -145,7 +145,7 @@
   };
   XHRTransportInternal.prototype.onTimeout1 = function () {
     this.timeout = 0;
-    this.open(this.url, this.withCredentials);
+    this.open(this.url, this.withCredentials, this.headers);
   };
   XHRTransportInternal.prototype.onTimeout0 = function () {
     var that = this;
